@@ -60,7 +60,9 @@
    
   This function is using ~wordProbas~ to get probability distribution on words,
   and using this distribution it calculates mathematical expectation of
-  self-information over set of words (which is entropy).
+  self-information over set of words
+  $$- \sum_{x \in X} p(x) \log p(x)$$
+  (which is entropy).
    
   We get the following results (for $n \in {1, 2, 3, 4}$):
   | $n$ | $H_n(X)$  | possible compression rate |
